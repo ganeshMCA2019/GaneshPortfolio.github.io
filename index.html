@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/42872a0fc0.js"crossorigin="anonymous"></script>
+  </head>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!--<img src="images/logo.jpeg" class="logo" />-->
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <!--<li><a href="#">Services</a></li>-->
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, i'am <br> <span> Ganesh </span> Kharat From Ambad
+          </h1>
+          
+          <h2>I am seeking an oportunity to enhance my skills</h2>
+        </div>
+      </div>
+      </div>
+    <!-- --------------about-------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/img11.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              First of all Welcome...! <br>
+              <br>
+              <hr>
+              <br>
+              <br>
+              Name: Ganesh Dharmaraj Kharat <br>
+              Age:25 <br>
+              Address: At.Post.Ambad,Tq.Ambad,Dist.Jalna(Maharashtra) <br> <br> <hr> <br><br>
+              I want to pursue my career in Java Full stack Development,and i love java. <br>
+          many people say's that java is very hard language
+              and very hard to understand and learn,but my point of view it is very easy to understand. <br> it provides the strong security to
+              the user.
+
+              <br>
+              <br>
+              <hr>
+
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('ideUsed')">IDE Known</p>
+              <p class="tab-links" onclick="opentab('family')">My Family</p>
+              <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+
+
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI?UX</span><br />
+                  Designing Web/App interfaces
+                </li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li><span>JAVASCRIPT</span></li>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>JAVA</span></li>
+                <li><span>SQL</span></li>
+                <li><span>Management</span></li>
+                
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2014</span><br />SSC<br/>Percentege-74.20</li>
+                <li><span>2016</span><br />HSC<br />Percentage-60</li>
+                <li><span>2019</span><br />BCA<br />Percentage-67.94</li>
+                <li><span>2020-Currently</span><br />MCA<br />CGPA-8.7</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="ideUsed">
+              <ul>
+                <li><span>Netbeans 15</span></li>
+                <li><span>Eclipse</span></li>
+                <li><span>Python IDLE</span></li>
+                <li><span>Visual-Studio Code</span></li>
+                <li><span>Visual-Studio 2022</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="family">
+              <ul>
+                <li><span>Sangita</span> <br> Mother</li>
+                <li><span>Dharmaraj</span><br>Father</li>
+                <li><span>Muktaram</span><br>Brother</li>
+                <li><span>Sarika</span><br>Sister(Married)</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="hobbies">
+              <ul>
+                <li><span>Listening Songs/podcast</span></li>
+                <li><span>Travelling</span></li>
+                <li><span>Driving</span></li>
+                <li><span>Playing Video Games</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------Contact--------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>ganeshkharat509@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+91-7972427776</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/ganesh.kharat.3597/"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/Meeganeshkharat"><i class="fab fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/gangstergk9311/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/ganesh-kharat-284441210/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="images/MyCV.pdf" download class="btn">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email"name="Email"placeholder="Your Email" required/>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright @ Ganesh Dharmaraj Kharat- 2023</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxpA0Kziuh7X3qJK1EP97Joy5i2i90XIsp2ArLiTSWkJ_CGA2FsZvC8YrJ-SN7ZAoQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML = "Message sent Successfully"
+        setTimeout(function()
+        {
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
